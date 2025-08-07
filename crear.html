@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Encuesta Señorita UMG</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Crear Encuesta Señorita UMG</h1>
+
+    <label for="titulo">Título de la encuesta:</label>
+    <input type="text" id="titulo" placeholder="señorita umg">
+
+    <label for="categorias">Categorías (separadas por coma):</label>
+    <input type="text" id="categorias" placeholder="carisma, pasarela, etc">
+
+    <h2>Candidatas</h2>
+    <p><strong>Agregar nueva candidata:</strong></p>
+    <input type="text" id="nombre" placeholder="Nombre completo">
+    <input type="text" id="carrera" placeholder="Carrera">
+    <input type="text" id="fotoUrl" placeholder="URL de la foto (de Drive)">
+
+    <button id="agregarCandidata">Agregar Candidata</button>
+
+    <div id="listaCandidatas"></div>
+
+    <button id="guardarEncuesta">Guardar Encuesta</button>
+  </div>
+
+  <!-- ✅ Script JS correcto -->
+  <script type="module" src="crear_firebase.js"></script>
+</body>
+</html>
+

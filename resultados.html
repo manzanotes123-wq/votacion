@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Resultados - Señorita UMG</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .ganadora {
+      font-size: 24px;
+      color: darkgreen;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="tituloEncuesta">Resultados de la Votación</h1>
+  <div id="ganadora" class="ganadora"></div>
+  <canvas id="graficaFinal" width="500" height="300"></canvas>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="firebaseconfig.js"></script>
+  <script src="resultados.js"></script>
+</body>
+</html>
